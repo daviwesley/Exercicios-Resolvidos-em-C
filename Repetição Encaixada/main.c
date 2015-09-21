@@ -6,10 +6,6 @@
 int main()
 {
 
-    //cualcular valor de x
-    //gerar os valores de x
-
-    passo_2();
-    //calcular valor e Y
+   
 
 }
