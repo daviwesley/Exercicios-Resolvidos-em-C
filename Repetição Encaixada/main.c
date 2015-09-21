@@ -5,19 +5,18 @@
 
 int main()
 {
-
-   int n = 2;
+    int n = 2;
     int i= 0;
-    int m = 3;int j = 0;int exp;
-    int x_max,y_max,max;
-    //cualcular valor de x
-    //gerar os valores de x
+    int m = 3;int j = 0;
+    int x_max,y_max,exp;
+    int max=0;
+    //calcular valor de x
     while(i<=n)
     {
         j=0;
     while(j<=m)
     {
-        exp = (i*j)- (i*i) + j;
+        exp = (i*j)-(i*i)+j;
         //printf("Par Gerado: (%d, %d)', i, j);")
         if(exp > max)
         {
@@ -29,7 +28,6 @@ int main()
     }
     i++;
     }
-   printf("Par Gerado: (%d, %d) o maximo eh %d);",x_max,y_max,max);
-
+    printf("O par (%d,%d) resulta no valor %d",x_max,y_max,max);
 
 }
