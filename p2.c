@@ -11,7 +11,7 @@ int main()
     printf("Entre com um numero:\n");
     scanf("%d",&a);
     while(k!=a){
-        b++;
+        b++;//b recebe mais um
         if(b%2!=0){
             printf("%d\n",b);
             k++;
