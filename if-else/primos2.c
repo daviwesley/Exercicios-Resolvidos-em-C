@@ -31,8 +31,8 @@ main()
     scanf("%d", &num);
     printf("\n\n\n");
      
-    for (i = 1; i <= num && vezes <= 3; i++)               
-    //for (i = 1; i <= num; i++)
+    //for (i = 1; i <= num && vezes <= 3; i++)               
+    for (i = 1; i <= num; i++)
     {    //5 / 1 = 5  resto = 0
         // 5 / 2 = 2  resto = 1
         // 5 / 3 = 1  resto = 2
