@@ -9,10 +9,10 @@ um par para o qual o valor da expressão xy - x2 + y seja máximo e calcular tam
 int main(){
 	int n, m, y, x, maxy, maxx, valorMax, valor;
 
-	printf("Digite m:");
+	printf("Digite m(x):");
 	scanf("%d", &m);
 
-	printf("Digite n:");
+	printf("Digite n(y):");
 	scanf("%d", &n);
 
 	valorMax = 0;
@@ -21,7 +21,7 @@ int main(){
 	{
 		for(y = 0; y < n; y++)
 		{
-		valor =	(x*y - x*x + y);
+		valor =	(x*y - x*x + y);//xy - x² + y
 			if(valor > valorMax) 
 			{
 			valorMax = valor;
