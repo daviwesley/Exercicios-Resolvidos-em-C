@@ -1,0 +1,8 @@
+receba x,y,z;
+se x+y>z e x+z>y e y+z>x faça{
+  se x==y e y==z faça{
+     escreva("O triangulo eh equilatero");
+  }
+}se nao faça{
+   escreva("Os valores recebidos não formam um triangulo");	
+}
