@@ -2,7 +2,7 @@
 #include <stdio.h>
  
 /*Q1: Soma */
-/* Utilizando a struct abaixo, crie uma função que recebe uma struct “numeros”
+/* Utilizando a struct abaixo, crie uma funÃ§Ã£o que recebe uma struct â€œnumerosâ€
   e retorna a soma de a e b. */
  
 typedef struct
@@ -19,8 +19,8 @@ int soma(Numeros n){
     return soma;
 }
  
-/*Q2: Maior Número */
-/*Escreva uma função que recebe uma variável do tipo “numeros” e retorna o maior entre a e b.*/
+/*Q2: Maior NÃºmero */
+/*Escreva uma funÃ§Ã£o que recebe uma variÃ¡vel do tipo â€œnumerosâ€ e retorna o maior entre a e b.*/
  
 int maiorNumero(Numeros n){
     if(n.a>n.b){
@@ -31,7 +31,7 @@ int maiorNumero(Numeros n){
 }
  
 /* Q3:  Maior Elemento */
-/* Crie uma função que recebe como argumento uma struct “vetor”, e retorna o maior elemento
+/* Crie uma funÃ§Ã£o que recebe como argumento uma struct â€œvetorâ€, e retorna o maior elemento
   desse vetor.*/
 typedef struct
 {
@@ -51,13 +51,13 @@ int maiorElemento(Vetor a){
 }
  
 /*Q4: Calculadora */
-/* Vamos alterar agora a struct “numeros”, ambas as variáveis a e b agora são do
-   tipo float e será acrescentado mais uma variável do tipo char chamada “operador”,
-   ela deve conter o tipo de operação que será realizada entre a e b.
-   Utilizando a nova struct, crie uma função que retorna o resultado da operação
-   realizada entre a e b, onde a operação a ser realizada é soma (‘+’), subtração (‘-’),
-   divisão (‘/’) ou multiplicação (‘*’), dependendo do tipo de operação armazenada
-   na variável “operador” */
+/* Vamos alterar agora a struct â€œnumerosâ€, ambas as variÃ¡veis a e b agora sÃ£o do
+   tipo float e serÃ¡ acrescentado mais uma variÃ¡vel do tipo char chamada â€œoperadorâ€,
+   ela deve conter o tipo de operaÃ§Ã£o que serÃ¡ realizada entre a e b.
+   Utilizando a nova struct, crie uma funÃ§Ã£o que retorna o resultado da operaÃ§Ã£o
+   realizada entre a e b, onde a operaÃ§Ã£o a ser realizada Ã© soma (â€˜+â€™), subtraÃ§Ã£o (â€˜-â€™),
+   divisÃ£o (â€˜/â€™) ou multiplicaÃ§Ã£o (â€˜*â€™), dependendo do tipo de operaÃ§Ã£o armazenada
+   na variÃ¡vel â€œoperadorâ€ */
  
 typedef struct
 {
@@ -87,9 +87,9 @@ float calcular(Numeros2 n){
  
 }
  
-/* Q5: Média das Notas */
-/* Utilizando a struct “aluno” definida abaixo, crie uma função que calcula e retorna
-  a média das três notas contidas no vetor “notas”. */
+/* Q5: MÃ©dia das Notas */
+/* Utilizando a struct â€œalunoâ€ definida abaixo, crie uma funÃ§Ã£o que calcula e retorna
+  a mÃ©dia das trÃªs notas contidas no vetor â€œnotasâ€. */
  
 typedef struct
 {
@@ -98,6 +98,7 @@ typedef struct
 }Aluno;
  
 float media(Aluno a){
+    //float tam=sizeof(a.notas)/sizeof(float);
     int i,somaNota=0,mediaTot;
     for(i=0;i<3;i++){
         somaNota=somaNota+a.notas[i];
@@ -106,9 +107,9 @@ float media(Aluno a){
     return mediaTot;
 }
  
-/* Q6: Maior Média */
-/* Com a struct e a função criada na questão anterior, crie uma nova função, que recebe um
-  vetor de n alunos como argumento, e retorna o número de matrícula do aluno com maior média. */
+/* Q6: Maior MÃ©dia */
+/* Com a struct e a funÃ§Ã£o criada na questÃ£o anterior, crie uma nova funÃ§Ã£o, que recebe um
+  vetor de n alunos como argumento, e retorna o nÃºmero de matrÃ­cula do aluno com maior mÃ©dia. */
  
 int maiorMedia(Aluno a[], int n){
     int i;
@@ -125,8 +126,8 @@ return maior;
  
 /* Construir Personagem */
  
-/* A struct "personagem" contém os atributos de um personagem em um jogo de RPG, utilizando
-  essa struct e a função criarPersonagem constrói um novo personagem. */
+/* A struct "personagem" contÃ©m os atributos de um personagem em um jogo de RPG, utilizando
+  essa struct e a funÃ§Ã£o criarPersonagem constrÃ³i um novo personagem. */
  
 typedef struct
 {
@@ -142,12 +143,12 @@ Personagem criarPersonagem(int vida, int ataque){
 }
  
 /* Q8: Duelo */
-/* Agora vamos criar a função "duelo", ela recebe dois personagens e faz os dois duelar.
-A função deve retornar 1 se o personagem a ganhar e 0 caso contrário.
-Dicas: Utilize um laço while e enquanto os dois personagens estiverem vivos, ou sejá
+/* Agora vamos criar a funÃ§Ã£o "duelo", ela recebe dois personagens e faz os dois duelar.
+A funÃ§Ã£o deve retornar 1 se o personagem a ganhar e 0 caso contrÃ¡rio.
+Dicas: Utilize um laÃ§o while e enquanto os dois personagens estiverem vivos, ou sejÃ¡
 a vida dos dois for maior que 0, os dois devem continuar se atacando.
 Quando o personagem a ataca o b, a quantidade de vida que o personagem b perde
-é igual ao ataque de a, a mesma coisa acontece quando b ataca a. */
+Ã© igual ao ataque de a, a mesma coisa acontece quando b ataca a. */
  
 int duelo(Personagem a, Personagem b){
     while(a.vida>=0 && b.vida>=0){
@@ -165,7 +166,7 @@ int duelo(Personagem a, Personagem b){
  
 }
  
-/**Implementação das funções de teste **/
+/**ImplementaÃ§Ã£o das funÃ§Ãµes de teste **/
  
 void test_soma()
 {
