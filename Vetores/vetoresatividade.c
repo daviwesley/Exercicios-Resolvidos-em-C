@@ -3,8 +3,8 @@
 #include <stdbool.h> //biblioteca booleana
 /*Cabeçalhos (protótipos) das funções */
 int menor(int v[], int tam);
-int maior(int v[], int tam);
-void copiar(int v1[], int v2[], int tam);
+int maior(int v[], int tam);				//atribuindo tipo int à função copiar:
+void copiar(int v1[], int v2[], int tam); 		//int copiar(int v1[],int v2[], int tam);							//int copiar(int v1[],int v2[], inte tam);
 int soma_elementos(int v[], int tam);
 bool existe(int v[], int tam, int elem);
 int soma_maior_menor(int v[], int tam);
@@ -44,10 +44,20 @@ int soma_maior_menor(int v[], int tam) {
 
 
 void copiar(int v1[], int v2[], int tam) {
+//int copiar(int v1[], int v2[], int tam) {
+	
 	int i;
 	
-	for(i=0;i<tam;i++);
+	for(i=0;i<tam;i++) {
 		v2[i] = v1[i];
+		//if(v2[i]==v1[i]){
+		//
+		//return 1;
+		//
+		//}else{
+		//
+		//return 0;	
+		//}
 
 }
 
@@ -199,10 +209,26 @@ void testeSomaMaiorMenor(){
 }
 
 void testeCopiar(){
+//void testeCopiar(){
+/*teste caso a função copiar for do tipo int*/
+						
+//printf("teste funcao copiar \n");
+//  int v[] = {1,2,3};
+//  int v2[] = {1,3,5};
+//  int v3[] = {1,6,9};
+//  int v4[] = {1,1,1};
+	//if(copiar(v,v2,3) == 1 ){
+	//    printf("    ok! \n");
+	//
+	//}else{
+	//    printf("nao esta OK! \n");
+	//}
+	//     }
+					/*		ass:.[rBBr]		*/
+	
 	printf("Teste funcao testeCopia\n");
 	printf("Sem teste pois a funcao eh Void!\n");
 }
-
 void testeSomaElementos(){
 	printf("Teste funcao testeSomaElementos\n");
 	
