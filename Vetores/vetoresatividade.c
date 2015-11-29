@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdbool.h>
-
+#include <stdbool.h> //biblioteca booleana
 /*Cabeçalhos (protótipos) das funções */
 int menor(int v[], int tam);
 int maior(int v[], int tam);
