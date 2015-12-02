@@ -95,12 +95,12 @@ void retira_espacos_desnecessarios(char A[], char B[])
     int j = 0;
     int cont = 0;
     for(i=0;A[i]!='\0';i++){
-        if(A[i] != ' '){
+        if(A[i] != ' '){//condição é uma letra
             B[j] = A[i];
             cont=0;
             j++;
         }
-        if(A[i] == ' ' && cont==0){
+        if(A[i] == ' ' && cont==0){//condição é um espaço
             B[j]=' ';
             j++;
             cont=1;
