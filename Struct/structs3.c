@@ -20,7 +20,7 @@ int main( ) {
    strcpy( Livro1.title, "C Programming");
    strcpy( Livro1.author, "Nuha Ali"); 
    strcpy( Livro1.subject, "C Programming Tutorial");
-   Book1.book_id = 6495407;
+   Livro1.book_id = 6495407;
 
    /* Especificações do Livro2 */
    strcpy( Livro2.title, "Telecom Billing");
