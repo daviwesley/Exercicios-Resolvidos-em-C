@@ -11,7 +11,7 @@ int main()
 		int x;
 		x = numero%10;
 		numero  = numero/10;
-        printf("%d\n",x);
+                printf("%d\n",x);
 	}
 
 	return 0;
