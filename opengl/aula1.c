@@ -6,6 +6,7 @@
 #define X 0
 #define Y 1
 
+// gcc main.c -lGL -lglut -o fortinite
 float vertices[3][2] = {{-25, -25},
 							{25, -25 },
 							{0.0, 0.0}};
